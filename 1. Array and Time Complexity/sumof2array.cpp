@@ -37,13 +37,13 @@ class Solution {
             j--;
         }
         if(carry){
-            ans.push_back(carry + '0');
+            ans.push_back(carry + '0'); // adding carry at the starting of main answer 
         }
         
-        while(ans[ans.size()-1]=='0'){
+        while(ans[ans.size()-1]=='0'){ // pop all zeros present at the starting of main answer
             ans.pop_back();
         }
-        reverse(ans.begin(),ans.end());
+        reverse(ans.begin(),ans.end());// reverse the array
         return ans;
     }
 };
