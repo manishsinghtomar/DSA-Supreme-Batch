@@ -19,7 +19,7 @@ int binarySearch(int arr[], int size, int target){
       //search in right
         start = mid + 1;
     }
-    mid = start +(end-start)\/2;  //mid = (start + end)/2; again we calculate mid for new values of start and end
+    mid = start +(end-start)/2;  //mid = (start + end)/2; again we calculate mid for new values of start and end
    }
       //element not found
     return -1; //invalid index
