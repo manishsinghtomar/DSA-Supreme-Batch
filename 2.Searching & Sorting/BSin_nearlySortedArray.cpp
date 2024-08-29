@@ -13,7 +13,7 @@ int binarySearch(vector<int> arr, int target){
            return mid;
         if(mid-1 >= s && arr[mid-1] == target)          //important condition mid-1 >= 0
            return mid-1;
-        if(mid+1 <= e && mid+1 < arr.size() && arr[mid+1] == target)  //important condition mid+1 < arr.size()
+        if(mid+1 <= e && arr[mid+1] == target)  //important condition mid+1 < arr.size()
            return mid+1;
 
         if(target > arr[mid]){
