@@ -1,13 +1,16 @@
 #include<iostream>
-#include<vector>
+#include<limits>
 using namespace std;
 
 int solve(int dividend , int divisor){
-    int s = 0;
-    int e = abs(dividend);
-    int ans = 0;
-    
-    int mid = s + (e-s)/2;
+    long s = 0;
+    long e = abs(dividend);
+    long ans = 0;
+
+    if(dividend == INT_MIN && divisor ==-1){
+        return INT_MAX;
+    }
+    long mid = s + (e-s)/2;
     while(s<=e){
         //perfect solution
         if(abs(mid*divisor) == abs(dividend)) {
