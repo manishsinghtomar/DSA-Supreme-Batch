@@ -17,9 +17,9 @@ int findSqrt(int n){
             e= mid-1;
         }
     else{
-        //ans store
+         //ans store
         ans = mid;
-        //right search
+         //right search
             s= mid+1;
         }
     mid = s+(e-s)/2;
