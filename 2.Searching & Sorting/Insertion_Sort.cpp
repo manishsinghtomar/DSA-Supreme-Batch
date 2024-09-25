@@ -13,10 +13,11 @@ int main(){
         //Step2 Compare
         for(int j=round-1;j>=0; j--) {
             if(arr[j]>val){
-
+                 //shift
+                arr[j+1] = arr[j]; 
             }
             else{
-                //
+                //rukna hai
             }
         }
     }
