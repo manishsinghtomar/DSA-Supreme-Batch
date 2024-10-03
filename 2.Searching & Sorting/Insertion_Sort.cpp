@@ -8,21 +8,27 @@ int main(){
     
     //insertion sort
     for(int round = 1; round < n; round++) {
-        //Step 1 - fetch
+        //Step A - fetch
         int val = arr[round];
-        //Step2 Compare
-        for(int j=round-1;j>=0; j--) {
+        //Step B: Compare
+        int j=round-1;
+        for(; j>=0; j--){
             if(arr[j]>val){
-                 //shift
+                 //Step C : shift
                 arr[j+1] = arr[j]; 
             }
             else{
                 //rukna hai
+                break; 
             }
         }
+        //stepD: copy
+        arr[j+1]=val;
     }
-
-
+    //printing
+    for(int i=0 ;i<n; i++) {
+        cout << arr[i]<<" "; 
+    }
 
     return 0;
 }
