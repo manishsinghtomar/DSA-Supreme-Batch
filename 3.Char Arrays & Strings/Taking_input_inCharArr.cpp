@@ -12,7 +12,7 @@ int main(){
 
     char arr[100];
     //cin >> arr;
-    // getline(cin, arr);
+    // getline(cin, arr); //error ,it doest work with char array but it will work with string
     cin.getline(arr,50);
     cout<<arr;
 
