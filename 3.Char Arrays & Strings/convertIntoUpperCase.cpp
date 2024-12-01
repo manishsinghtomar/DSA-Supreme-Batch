@@ -5,7 +5,7 @@ using namespace std;
 void covertIntoUpperCase(char arr[]){
     int n = strlen(arr);
     for(int i=0; i<n; i++){
-        arr[i] = arr[i] - 'a' + 'A';        
+        arr[i] = arr[i] - 'a' + 'A';    //lowerCase to Uppercase --> -'a' + 'A'    
     } 
 }
 
