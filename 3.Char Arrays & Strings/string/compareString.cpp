@@ -1,7 +1,7 @@
 #include<iostream>
 #include<string>
 using namespace std;
-
+// we already have predefined function for comparing strings
 bool CompareString(string a, string b){
  if(a.length()!=b.length())
     return false;
