@@ -27,7 +27,7 @@ public:
            mini = min(mini, diff);
         }   
         
-        //something missing
+        //something missing - THIS IS THE GAME
         int lastDiff = (minutes[0] + 1440) - minutes[n-1];
         mini= min(mini, lastDiff);
 
