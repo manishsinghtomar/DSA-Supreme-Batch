@@ -30,7 +30,9 @@ public:
         }   
         
         //something missing - THIS IS THE GAME
-        int lastDiff = (minutes[0] + 1440) - minutes[n-1];
+        int lastDiff1 = (minutes[0] + 1440) - minutes[n-1];
+        int lastDiff2 = minutes[n-1] - minutes[0];
+        int lastDiff = min(lastDiff1, lastDiff2);
         mini= min(mini, lastDiff);
 
         return mini;
