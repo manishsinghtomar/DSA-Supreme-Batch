@@ -1,3 +1,10 @@
+/* padding refers to extra bytes added between data members of a class or structure to ensure proper memory alignment. This alignment allows the processor to access data more efficiently, as many processors are optimized to read data from memory at specific byte boundaries. */
+
+/* Padding and Alignment: Compilers add padding between data members to align them on memory boundaries, enhancing access speed. 
+
+
+Greedy Alignment Strategy: This technique aggressively arranges data members to reduce padding, often by ordering members from largest to smallest size */
+
 #include<iostream>
 using namespace std;
 
