@@ -20,3 +20,12 @@ Non-primitive data structures are more complex and can be divided into two types
 ###	Linear Data Structures: Elements are arranged in a linear sequence.
  
 ### Non-Linear Data Structures: Elements are arranged in a hierarchical or network-like structure.
+
+# There are 6  types of tokens in C++ :
+
+## 1.Keyword
+## 2.Identifiers
+## 3.Constants
+## 4.Strings
+## 5.Special symbols
+## 6.Operators
