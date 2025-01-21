@@ -29,11 +29,11 @@ public:
 
     //behaviour    - behaviour means functions and we often call them methods in java
     void eat(){
-
+    cout<<"Eating"<<endl;
     }
 
     void sleep(){
-
+    cout<<"Sleeping"<<endl;
     }
 
 };
@@ -52,5 +52,17 @@ int main(){
 
 
   // Dynamic Memory
+  Animal3 *suresh = new Animal3;
+  (*suresh).age = 35;
+  (*suresh).name = "Suresh Kumar";
+
+  // alternative - dynamic
+    suresh->age = 34;
+    suresh->name = "Suar";
+    suresh->eat();
+    suresh->sleep();
+    cout<< "Age of suresh is: "<<suresh->age <<endl;
+    cout<< "name of suresh is: "<<suresh->name <<endl; 
+
     return 0;
 }
