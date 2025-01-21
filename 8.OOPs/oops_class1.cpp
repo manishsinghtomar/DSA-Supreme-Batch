@@ -27,6 +27,13 @@ public:
     int age;
     string name;
 
+    // default constructor
+    Animal3(){
+        age = 0;
+        name = "";
+        cout<<"Constructor is called"<<endl;
+    }
+
     //behaviour    - behaviour means functions and we often call them methods in java
     void eat(){
     cout<<"Eating"<<endl;
