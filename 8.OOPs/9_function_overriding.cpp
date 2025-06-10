@@ -9,6 +9,7 @@ class Animal{
         cout<<"speaking"<<endl;
     }
 };
+
 class Dog: public Animal{
     public:
     // override 
