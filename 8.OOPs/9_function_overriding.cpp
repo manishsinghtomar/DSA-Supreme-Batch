@@ -1,4 +1,4 @@
-// Runtime polymorphism : method call is executed at runtime
+          // Runtime polymorphism : method call is executed at runtime
 
 #include<iostream>
 using namespace std;
@@ -32,6 +32,9 @@ int main(){
     // upcasting
     Animal* a = new Dog();
     a->speak();
+
+    Dog* b = (Dog*)new Animal();
+    b-> speak();
     return 0;
 }
 
