@@ -35,13 +35,9 @@ int main(){
     a->speak();
 
     Dog* b = (Dog*)new Animal();
-<<<<<<< HEAD
     b-> speak();
-=======
-    b->speak();
 
     delete a; // clean up memory
->>>>>>> 6532322113007152e7f04e0aaae6e80a84e395dc
     return 0;
 }
 
