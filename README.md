@@ -2,8 +2,7 @@
 # Types of Data Structures
 Data structures are broadly classified into two categories:
 
-![alt text](![image](https://github.com/user-attachments/assets/865c9dac-790f-4a62-9d8e-0ea8a19c8d2a)
-)
+![alt text](https://github.com/user-attachments/assets/865c9dac-790f-4a62-9d8e-0ea8a19c8d2a)
   
 ## Primitive Data Structures
 Primitive data structures are the basic building blocks used to create more complex structures. They include:
