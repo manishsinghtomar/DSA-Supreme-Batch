@@ -3,8 +3,11 @@ using namespace std;
 
 class abc
 {
-    int x;
-    int *y;
+//private members
+mutable int x;   // mutable keyword allows us to modify value in const marked method.
+int *y;
+int z;
+
 
 public:
     abc()
@@ -12,21 +15,71 @@ public:
         x = 0;
         y = new int(0);
     }
+    
+    // abc(int _x, int _y){
+    //     x= _x;
+    //     *y = _y;
+    // }
+    
 
-    int getX()
+    // ctor : old style
+    // abc(int _x, int _y, int _z =0){ // default Argument : if we dont pass value of _z then by default value will be passed;
+    //     x= _x;
+    //     *y = _y;
+    //     z= _z;
+    // }
+
+    // initialization list
+    abc(int _x, int _y, int _z = 0) : x(_x), y(new int(_y)), z(_z) {}
+
+    // int getX() const
+    // {
+    //     x=34; // this method is const and can't ever change member variable
+    //     return x;
+    // } 
+    
+    int getX() const 
     {
+        x = 12 ; // no error , cause mutable keyword
         return x;
     }
 
     void setX(int _val)
     {
         x = _val;
+    } 
+    
+    int getY() const
+    {
+        int f = 34;
+        // y = &f; // error cant be modified or change cause method is const
+        return *y;
+    }
+
+    void setY(int _val)
+    {
+        *y = _val;
+    }
+
+    int getZ() const
+    {
+        return z;
     }
 };
 
+// here , 'a' cant call a non const function.
+void printABC(const abc &a){  // for const parameter , invoking function should be const otherwise it will throw error. 
+   cout << a.getX()<<" "<< a.getY() <<"  "<<a.getZ()<<endl;
+}
+
 int main()
 {
-
+    // abc a; 
+    // cout<<a.getX()<<endl; //0
+    // cout<<a.getY()<<endl; //0
+    
+    abc b(1,2);
+    printABC(b);
     return 0;
 }
 
@@ -65,3 +118,7 @@ int main2()
 
     return 0;
 }
+
+
+// default arguments are always right most ;
+// int(int x =2 , int y , int z =4 , int u = 5){} //not allowed all should be at the right most position.
